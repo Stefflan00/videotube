@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
-gem 'carrierwave', '~> 0.10.0'
-gem 'carrierwave-video', '~> 0.5.6'
-#gem 'streamio-ffmpeg', '~> 1.0.0'
+#gem 'carrierwave-video', :git => 'https://github.com/Stefflan00/carrierwave-video.git'
+gem 'carrierwave-video'
+gem 'carrierwave-video-thumbnailer'
+gem 'mini_magick', '~> 3.7.0'
+gem 'video-js-rails', '~> 4.3.0.1'
+#gem 'videojs_rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use postgresql as the database for Active Record

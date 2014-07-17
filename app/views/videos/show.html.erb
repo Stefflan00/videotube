@@ -7,8 +7,12 @@
 
 <p>
   <strong>Upload:</strong>
-  <%= @video.upload %>
+  <%= webformat = @video.videofile.to_s.byteslice(0..-5) +".webm" %>
 </p>
+
+<div id="name">
+    <%= video_player src: { mp4: "#{@video.videofile}",  webm:  }, controls: true %>
+</div>
 
 <%= link_to 'Edit', edit_video_path(@video) %> |
 <%= link_to 'Back', videos_path %>
